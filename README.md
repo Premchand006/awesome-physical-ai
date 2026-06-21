@@ -1,15 +1,8 @@
-<!--
-  BEFORE YOU PUBLISH:
-    1. This repo is configured for `Premchand006` in badges, links, and templates.
-    2. If you fork it under a different account, update the owner in badges + links,
-         then remove the .lycheeignore exception so links get checked.
-    3. Replace the social-preview image in repo Settings → "Social preview".
-    4. Add the GitHub topics listed in awesome-resources/README.md (Settings → Topics).
--->
-
 <div align="center">
 
 # Awesome Physical AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+<img src="[https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg]"  width="1100" height="500">
 
 ### The companies, chips, and models building machines that perceive, reason, and act in the physical world.
 
