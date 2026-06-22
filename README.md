@@ -2,7 +2,7 @@
 
 # Awesome Physical AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="[https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg]"  width="1100" height="500">
+<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg"  width="1100" height="500">
 
 ### The companies, chips, and models building machines that perceive, reason, and act in the physical world.
 
