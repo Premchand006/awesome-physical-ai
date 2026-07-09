@@ -95,14 +95,34 @@ Train large models in the cloud → simulate and generate synthetic data with [w
 The landscape splits into two groups with different goals, power envelopes, and architectures:
 
 ```mermaid
-flowchart TB
-    subgraph EDGE["On-Device Edge AI Specialists (Watts)"]
-        H[Hailo] & S[SiMa.ai] & AX[Axelera] & Q[Qualcomm] & BL[Blaize] & DX[DeepX] & MX[MemryX] & MY[Mythic] & EN[EnCharge] & AM[Ambarella]
-    end
-    subgraph DC["Ultra-Scale Datacenter Giants (Kilowatts)"]
-        NV[NVIDIA] & GR[Groq] & TT[Tenstorrent]
-    end
-    EDGE -. "deploy trained models" .- DC
+flowchart LR
+
+subgraph E["Edge AI Compute (Watts)"]
+direction TB
+H["Hailo"]
+S["SiMa.ai"]
+AX["Axelera AI"]
+Q["Qualcomm"]
+BL["Blaize"]
+DX["DeepX"]
+MX["MemryX"]
+MY["Mythic"]
+EN["EnCharge"]
+AM["Ambarella"]
+end
+
+P["Model Training & Optimization"]
+
+subgraph D["Datacenter AI Compute (Kilowatts)"]
+direction TB
+NV["NVIDIA"]
+GR["Groq"]
+TT["Tenstorrent"]
+end
+
+E -->|"Edge Inference"| P
+P -->|"Training / Fine-Tuning"| D
+D -.->|"Deploy Models"| E
 ```
 
 - **On-Device Edge AI Specialists** — optimize performance-per-watt to run inference *inside* cameras, robots, cars, and PCs.
