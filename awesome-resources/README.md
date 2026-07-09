@@ -42,14 +42,6 @@ Only authoritative or genuinely useful, currently-maintained resources are liste
 - [CNX Software](https://www.cnx-software.com) - Independent hands-on reviews of edge AI hardware.
 - [Phoronix](https://www.phoronix.com) - Independent Linux and accelerator benchmarking.
 
-## Suggested GitHub topics
-Add these in Settings then Topics so the repo is discoverable:
-
-```
-awesome  physical-ai  edge-ai  robotics  vla
-nvidia  hailo  axelera  sima-ai  qualcomm
-world-models  embodied-ai  ai-accelerator  npu  humanoid-robots
-```
 
 ---
 

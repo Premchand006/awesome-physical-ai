@@ -1,6 +1,7 @@
+
 <div align="center">
 
-# Physical AI Field Guide (https://awesome.re/badge.svg)](https://awesome.re)
+# Physical AI Field Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg"  width="1100" height="500">
 
