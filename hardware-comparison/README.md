@@ -66,7 +66,7 @@ Edit the YAML, not this block.
 
 ## How to read efficiency claims
 - **TOPS/W** is the honest comparator for edge parts, but it's still a peak figure. Hailo-10H ≈ 16 TOPS/W; Blaize ≈ >10 TOPS/W; Axelera Metis ≈ 15 TOPS/W; Mythic claims 120 TOPS/W (next-gen, unverified).
-- **Independent datapoints today:** MemryX (Phoronix / Anton Maltsev hands-on), Hailo-10H (CNX Software), Groq (~241 tok/s Llama-2-70B). Everything else is vendor-sourced.
+- **Independent datapoints today:** MemryX (Phoronix / Anton Maltsev hands-on), Hailo-10H (CNX Software), Hailo-8 (widely third-party benchmarked), Axelera Metis (Hackster Edge AI Power series), DeepX DX-M1 (Hackster Edge AI Power series), Groq (~241 tok/s Llama-2-70B). Everything else is vendor-sourced.
 - **Memory caps model size.** Parts with no external DRAM (Hailo-8, MemryX, Mythic) are superb for CV but limited for large LLMs; parts with on-module LPDDR (Hailo-10H, EnCharge, Jetson) can host generative models.
 
 ➡️ Full per-company detail: [companies](../companies/README.md). The models these run: [vla-and-world-models](../vla-and-world-models/README.md).

@@ -45,6 +45,7 @@ The fundamental division is **how each chip handles the math** (full taxonomy in
 | [Mythic](mythic.md) | Mythic ACE | Analog compute-in-memory | Edge vision, defense | Analog efficiency; weights on-chip |
 | [EnCharge](encharge.md) | EnCharge suite | Analog charge-domain IMC | AI PCs, laptops, workstations | ~20× perf/watt (claimed) |
 | [Ambarella](ambarella.md) | CVflow / Cooper | CVflow vision SoC | Security cameras, automotive, AMRs | Video + AI in one low-power SoC |
+| [Intel](intel.md) | OpenVINO (+ GenAI, NNCF) | Heterogeneous CPU + NPU + iGPU/dGPU | x86 edge servers, AI PCs, embedded | Zero new hardware; mature tooling; broad device coverage |
 
 ### Ultra-Scale Datacenter Giants
 | Brand | Software stack | Core architecture | Target environment | Strategic edge |
@@ -54,7 +55,8 @@ The fundamental division is **how each chip handles the math** (full taxonomy in
 | [Tenstorrent](datacenter-context.md) | TT-Metalium / TT-Buda | RISC-V Tensix grid | Datacenter training/inference | Open-source bare-metal kernels |
 
 ## Profiles
-**Edge specialists:** [Hailo](hailo.md) · [SiMa.ai](sima-ai.md) · [Axelera](axelera.md) · [Qualcomm](qualcomm.md) · [Blaize](blaize.md) · [DeepX](deepx.md) · [MemryX](memryx.md) · [Mythic](mythic.md) · [EnCharge](encharge.md) · [Ambarella](ambarella.md)
+**Edge specialists:** [Hailo](hailo.md) · [SiMa.ai](sima-ai.md) · [Axelera](axelera.md) · [Qualcomm](qualcomm.md) · [Blaize](blaize.md) · [DeepX](deepx.md) · [MemryX](memryx.md) · [Mythic](mythic.md) · [EnCharge](encharge.md) · [Ambarella](ambarella.md) · [Intel](intel.md)
+
 **Datacenter / context:** [NVIDIA](nvidia.md) · [Groq & Tenstorrent](datacenter-context.md)
 
 ➡️ Next: side-by-side specs in [hardware-comparison](../hardware-comparison/README.md), or the models these chips run in [vla-and-world-models](../vla-and-world-models/README.md).

@@ -10,7 +10,6 @@ Only authoritative or genuinely useful, currently-maintained resources are liste
 - [World models and simulation](#world-models-and-simulation)
 - [Papers](#papers)
 - [Benchmarks and analysis](#benchmarks-and-analysis)
-- [Suggested GitHub topics](#suggested-github-topics)
 
 ## Company SDKs and docs
 - [NVIDIA Isaac ROS](https://developer.nvidia.com/isaac/ros) - GPU-accelerated ROS 2 perception for robots.

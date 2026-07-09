@@ -86,7 +86,7 @@
   claim_type: independent
   status: available
   source_url: https://hailo.ai/products/ai-accelerators/hailo-10h-m2-generative-ai-acceleration-module/
-  source_date: 2025-01-06
+  source_date: 2025-07-22  # Hailo-10H general availability (per companies/hailo.md); the earlier 2025-01-06 was a pre-GA announcement date
   last_verified: 2026-07-09
   independent_benchmark: "CNX Software"
 
@@ -222,7 +222,7 @@
   claim_type: vendor
   status: available
   source_url: https://mythic.ai/products/m1076-analog-matrix-processor/
-  source_date: 2025-12-17
+  source_date: 2021-06-01  # M1076 AMP product launch date (the headline 25 TOPS figure); the Dec-2025 $125M round is a funding event, not this spec
   last_verified: 2026-07-09
   independent_benchmark: null
 

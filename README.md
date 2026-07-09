@@ -3,7 +3,7 @@
 
 # Physical AI Field Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg"  width="1100" height="500">
+<img src="physical_ai.jpg" alt="Physical AI Field Guide" width="1100" height="500">
 
 
 ### The companies, chips, and models building machines that perceive, reason, and act in the physical world.
@@ -143,6 +143,7 @@ Deep profiles with verified specs and 2025–2026 news in [companies/](companies
 | [Mythic](companies/mythic.md) | Mythic ACE | Analog compute-in-memory | Edge vision, defense | Analog efficiency; weights on-chip |
 | [EnCharge](companies/encharge.md) | EnCharge suite | Analog charge-domain IMC | AI PCs, laptops, workstations | ~20× perf/watt (claimed) |
 | [Ambarella](companies/ambarella.md) | CVflow / Cooper | CVflow vision SoC | Security cameras, automotive, AMRs | Video + AI in one low-power SoC |
+| [Intel](companies/intel.md) | OpenVINO (+ GenAI, NNCF) | Heterogeneous CPU + NPU + iGPU/dGPU | x86 edge servers, AI PCs, embedded | Zero new hardware; mature tooling; broad device coverage |
 
 ### Ultra-Scale Datacenter Giants
 | Brand | Software stack | Core architecture | Target environment | Strategic edge |
@@ -167,7 +168,7 @@ A taste of the flagship parts; full precision-labeled tables and caveats in [har
 | [Mythic](companies/mythic.md) | M1076 | 25 TOPS | analog | 3 W | 80M weights on-chip |
 | [DeepX](companies/deepx.md) | DX-M1 | 25 TOPS | INT8 | 3–5 W | — |
 
-> Only **MemryX** (Phoronix), **Hailo-10H** (CNX Software), and **Groq** (~241 tok/s, Llama-2-70B) currently have genuinely independent third-party numbers. Everything else is **vendor-claimed**.
+> Only **MemryX** (Phoronix), **Hailo-10H** and **Hailo-8** (CNX Software / widely third-party benchmarked), **Axelera Metis** (Hackster), **DeepX DX-M1** (Hackster), and **Groq** (~241 tok/s, Llama-2-70B) currently have genuinely independent third-party numbers. Everything else is **vendor-claimed**.
 
 ---
 
@@ -252,7 +253,7 @@ awesome-physical-ai/
 
 ## 🤝 Contributing
 
-This map is only as good as the community keeps it. **Great contributions:** correct a spec (with a dated primary source), add verified news, flag a status change, or add a high-signal resource. The quality bar is in **[CONTRIBUTING.md](CONTRIBUTING.md)**, and CI runs `awesome-lint` + a link checker on every PR.
+This map is only as good as the community keeps it. **Great contributions:** correct a spec (with a dated primary source), add verified news, flag a status change, or add a high-signal resource. The quality bar is in **[CONTRIBUTING.md](CONTRIBUTING.md)**, and CI runs a link checker on every PR and `awesome-lint` (advisory) on the resource list.
 
 **Quality standards:** cite a primary source with a date; label vendor claims; state precision for any TOPS figure; stay vendor-neutral.
 

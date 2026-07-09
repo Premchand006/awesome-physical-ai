@@ -41,6 +41,22 @@ jobs:
           output: ./lychee-report.md
           fail: false
 
+      - name: Find existing rolling broken-links issue
+        id: find_issue
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-link',
+              per_page: 100,
+            });
+            const existing = issues.find(i => !i.pull_request);
+            core.setOutput('number', existing ? String(existing.number) : '');
+
       - name: Create issue on broken links (scheduled run)
         if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
         uses: peter-evans/create-issue-from-file@v5
@@ -48,6 +64,7 @@ jobs:
           title: "🔗 Broken links detected by lychee"
           content-filepath: ./lychee-report.md
           labels: broken-link, automated
+          issue-number: ${{ steps.find_issue.outputs.number }}
 
       - name: Fail the job on broken links (push / PR)
         if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'schedule'
