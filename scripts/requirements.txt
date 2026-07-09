@@ -1,0 +1,2 @@
+# Dependencies for the data pipeline (scripts/generate_tables.py, scripts/staleness.py)
+PyYAML==6.0.2

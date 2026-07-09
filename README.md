@@ -1,15 +1,9 @@
-<!--
-  BEFORE YOU PUBLISH:
-    1. This repo is configured for `Premchand006` in badges, links, and templates.
-    2. If you fork it under a different account, update the owner in badges + links,
-         then remove the .lycheeignore exception so links get checked.
-    3. Replace the social-preview image in repo Settings → "Social preview".
-    4. Add the GitHub topics listed in awesome-resources/README.md (Settings → Topics).
--->
-
 <div align="center">
 
-# Awesome Physical AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Physical AI Field Guide (https://awesome.re/badge.svg)](https://awesome.re)
+
+<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/physical_ai.jpg"  width="1100" height="500">
+
 
 ### The companies, chips, and models building machines that perceive, reason, and act in the physical world.
 
@@ -20,16 +14,15 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 <br/>
 [![Link Check](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-physical-ai/link-check.yml?label=links)](https://github.com/Premchand006/awesome-physical-ai/actions/workflows/link-check.yml)
-[![Awesome Lint](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-physical-ai/awesome-lint.yml?label=awesome-lint)](https://github.com/Premchand006/awesome-physical-ai/actions/workflows/awesome-lint.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/Premchand006/awesome-physical-ai)](https://github.com/Premchand006/awesome-physical-ai/commits)
-[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-physical-ai?style=social)](https://github.com/Premchand006/awesome-physical-ai/stargazers)
+[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-physical-ai?style=social)](https://github.com/Premchand006/awesome-physical-ai)
 
 </div>
 
 ---
 
 > [!NOTE]
-> **Specs and corporate status in this field change monthly.** Every TOPS figure here is a **peak vendor claim at a stated precision** (INT4/INT8/FP4 are *not* comparable); only a handful of parts have independent third-party benchmarks, flagged inline. Recent shifts tracked here: **Groq → NVIDIA** (licensed/acqui-hired), **Blaize** went public, **Mythic** revived with $125M, **Ambarella** exploring a sale. See [**Renames & Deprecations →**](renames-and-deprecations.md).
+> **Specs and corporate status in this field change monthly.** Every TOPS figure here is a **peak vendor claim at a stated precision** (INT4/INT8/FP4 are *not* comparable); only a handful of parts have independent third-party benchmarks, flagged inline. Recent shifts tracked here: **Groq → NVIDIA** (licensed/acqui-hired), **Blaize** went public, **Mythic** revived with $125M, **Ambarella** exploring a sale. See the canonical [**Renames & Deprecations →**](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
 
 ## 📖 Table of Contents
 
@@ -70,7 +63,7 @@ The Physical-AI hardware space is loud with marketing TOPS numbers and near-iden
 
 ### 3. "What's hype vs. real — and what just changed?"
 - Every vendor figure is **labeled**; independent benchmarks are called out. → [Hardware Comparison](hardware-comparison/README.md)
-- A living **renames/deprecations/status** page (Groq→NVIDIA, Blaize public, Coral dead). → [Renames & Deprecations](renames-and-deprecations.md)
+- A living **renames/deprecations/status** page (Groq→NVIDIA, Blaize public, Coral dead). → [Renames & Deprecations](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md)
 
 ### 4. "What models actually run on this hardware?"
 - The **VLA policies and world models** driving robots today. → [VLA and World Models](vla-and-world-models/README.md)
@@ -161,14 +154,14 @@ Deep profiles with verified specs and 2025–2026 news in [companies/](companies
 
 ## 📊 Hardware Comparison
 
-A taste of the flagship parts; full precision-labeled tables and caveats in [hardware-comparison/](hardware-comparison/README.md).
+A taste of the flagship parts; full precision-labeled tables and caveats in [hardware-comparison/](hardware-comparison/README.md). Prefer an interactive short-list? Try the **[hardware &amp; runtime picker →](docs/picker/)** (budget · use case · power · ecosystem → ranked top-3). Both are generated from one source of truth: [`data/hardware.yaml`](data/hardware.yaml).
 
 | Company | Flagship | AI perf (vendor) | Precision | Power | Memory |
 |---|---|---|---|---|---|
 | [NVIDIA](companies/nvidia.md) | Jetson AGX Thor | up to 2,070 TFLOPS | FP4 | 40–130 W | 128 GB |
 | [Hailo](companies/hailo.md) | Hailo-10H | 40 / 20 TOPS | INT4 / INT8 | ~2.5 W | 4–8 GB on-module |
-| [Axelera](companies/axelera.md) | Europa (2026) | 629 TOPS | INT8 | card | 128 MB SRAM |
-| [EnCharge](companies/encharge.md) | EN100 (M.2) | 200+ TOPS | analog | 8.25 W | up to 128 GB |
+| [Axelera](companies/axelera.md) | Europa — samples H1 2026 *(not shipping)* | 629 TOPS | INT8 | card | 128 MB SRAM |
+| [EnCharge](companies/encharge.md) | EN100 (M.2) | 200+ TOPS | analog | 8.25 W | 32 GB |
 | [SiMa.ai](companies/sima-ai.md) | Modalix | 50 TOPS | BF16 + INT8/16 | <10 W | on-chip |
 | [Mythic](companies/mythic.md) | M1076 | 25 TOPS | analog | 3 W | 80M weights on-chip |
 | [DeepX](companies/deepx.md) | DX-M1 | 25 TOPS | INT8 | 3–5 W | — |
@@ -214,7 +207,7 @@ Why this is widely seen as the next frontier — with honest caveats — in [fut
 
 ## 🔁 Renames and Deprecations
 
-What changed in 2024–2026 — don't act on stale info. Full page: [renames-and-deprecations.md](renames-and-deprecations.md).
+What changed in 2024–2026 — don't act on stale info. The full page is maintained once, in the flagship repo: [canonical Renames & Deprecations →](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
 
 | If a source says… | Today it's… |
 |---|---|
@@ -238,9 +231,11 @@ awesome-physical-ai/
 ├── vla-and-world-models/      # OpenVLA, pi0, SmolVLA, GR00T, Cosmos, LeRobot
 ├── applications/              # use cases by vertical
 ├── future-and-market/         # why it's growing; sourced market ranges; milestones
-├── awesome-resources/         # curated links (SDKs, papers, robot-learning, benchmarks)
-└── renames-and-deprecations.md
+└── awesome-resources/         # curated links (SDKs, papers, robot-learning, benchmarks)
 ```
+
+> **Renames & deprecations** are maintained once, in the flagship repo:
+> [awesome-embedded-ai-stack/renames-and-deprecations.md](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
 
 ### Explore by section
 - 🧩 **[Concepts](concepts/README.md)** — the vocabulary and the three-computer workflow.

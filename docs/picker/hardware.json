@@ -1,0 +1,317 @@
+[
+  {
+    "id": "jetson-agx-thor",
+    "name": "NVIDIA Jetson AGX Thor (Dev Kit)",
+    "vendor": "NVIDIA",
+    "category": "platform",
+    "ai_perf": {
+      "value": 2070,
+      "unit": "TFLOPS",
+      "precision": "FP4"
+    },
+    "power_w": {
+      "min": 40,
+      "max": 130
+    },
+    "memory": "128 GB LPDDR5X",
+    "genai_capable": true,
+    "price_usd": 3499,
+    "best_for": "Humanoids, multi-sensor fusion, on-robot VLA/LLM",
+    "claim_type": "vendor",
+    "status": "available"
+  },
+  {
+    "id": "jetson-orin-nano-super",
+    "name": "NVIDIA Jetson Orin Nano Super (Dev Kit)",
+    "vendor": "NVIDIA",
+    "category": "platform",
+    "ai_perf": {
+      "value": 67,
+      "unit": "TOPS",
+      "precision": "INT8-sparse"
+    },
+    "power_w": {
+      "min": 7,
+      "max": 25
+    },
+    "memory": "8 GB LPDDR5, 102 GB/s",
+    "genai_capable": true,
+    "price_usd": 249,
+    "best_for": "Prototyping, robotics entry, small GenAI",
+    "claim_type": "vendor",
+    "status": "available"
+  },
+  {
+    "id": "rpi5-ai-hat-plus-2",
+    "name": "Raspberry Pi 5 + AI HAT+ 2 (Hailo-10H)",
+    "vendor": "Raspberry Pi",
+    "category": "platform",
+    "ai_perf": {
+      "value": 40,
+      "unit": "TOPS",
+      "precision": "INT4"
+    },
+    "power_w": {
+      "min": 2,
+      "max": 3
+    },
+    "memory": "8 GB LPDDR4X on HAT + Pi RAM",
+    "genai_capable": true,
+    "price_usd": 130,
+    "best_for": "GenAI-at-edge on a budget; local LLM/VLM on a Pi",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "hailo-10h",
+    "name": "Hailo-10H (discrete M.2)",
+    "vendor": "Hailo",
+    "category": "module",
+    "ai_perf": {
+      "value": 40,
+      "unit": "TOPS",
+      "precision": "INT4"
+    },
+    "power_w": {
+      "min": 2,
+      "max": 3
+    },
+    "memory": "4-8 GB on-module LPDDR4X",
+    "genai_capable": true,
+    "price_usd": null,
+    "best_for": "Add local GenAI to an x86/ARM host",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "hailo-8",
+    "name": "Hailo-8 (discrete M.2)",
+    "vendor": "Hailo",
+    "category": "module",
+    "ai_perf": {
+      "value": 26,
+      "unit": "TOPS",
+      "precision": "INT8"
+    },
+    "power_w": {
+      "min": 2,
+      "max": 3
+    },
+    "memory": "on-chip (no external DRAM)",
+    "genai_capable": false,
+    "price_usd": 110,
+    "best_for": "High-perf/watt classic computer vision",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "sima-modalix",
+    "name": "SiMa.ai Modalix (MLSoC)",
+    "vendor": "SiMa.ai",
+    "category": "soc",
+    "ai_perf": {
+      "value": 50,
+      "unit": "TOPS",
+      "precision": "BF16+INT8/16"
+    },
+    "power_w": {
+      "min": 5,
+      "max": 10
+    },
+    "memory": "8-32 GB LPDDR5 on module",
+    "genai_capable": true,
+    "price_usd": 349,
+    "best_for": "Robotics, industrial, multimodal edge (legacy C/C++ + AI on one SoC)",
+    "claim_type": "vendor",
+    "status": "available"
+  },
+  {
+    "id": "axelera-metis",
+    "name": "Axelera Metis (M.2 / PCIe)",
+    "vendor": "Axelera",
+    "category": "card",
+    "ai_perf": {
+      "value": 214,
+      "unit": "TOPS",
+      "precision": "INT8"
+    },
+    "power_w": {
+      "min": 8,
+      "max": 40
+    },
+    "memory": "on-card",
+    "genai_capable": false,
+    "price_usd": null,
+    "best_for": "High-FPS multi-stream computer vision (INT8-only)",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "axelera-europa",
+    "name": "Axelera Europa (PCIe)",
+    "vendor": "Axelera",
+    "category": "card",
+    "ai_perf": {
+      "value": 629,
+      "unit": "TOPS",
+      "precision": "INT8"
+    },
+    "power_w": {
+      "min": 45,
+      "max": 45
+    },
+    "memory": "128 MB on-chip L2 SRAM",
+    "genai_capable": true,
+    "price_usd": null,
+    "best_for": "Enterprise-edge GenAI + vision — SAMPLES H1 2026, not shipping",
+    "claim_type": "vendor",
+    "status": "samples"
+  },
+  {
+    "id": "blaize-gsp-elcano",
+    "name": "Blaize GSP (El Cano)",
+    "vendor": "Blaize",
+    "category": "module",
+    "ai_perf": {
+      "value": 16,
+      "unit": "TOPS",
+      "precision": "INT8"
+    },
+    "power_w": {
+      "min": 7,
+      "max": 7
+    },
+    "memory": "on-module",
+    "genai_capable": false,
+    "price_usd": null,
+    "best_for": "Programmable graph-native dataflow for automotive/security/smart-city",
+    "claim_type": "vendor",
+    "status": "available"
+  },
+  {
+    "id": "deepx-dx-m1",
+    "name": "DeepX DX-M1",
+    "vendor": "DeepX",
+    "category": "module",
+    "ai_perf": {
+      "value": 25,
+      "unit": "TOPS",
+      "precision": "INT8"
+    },
+    "power_w": {
+      "min": 3,
+      "max": 5
+    },
+    "memory": "4 GB LPDDR5",
+    "genai_capable": false,
+    "price_usd": null,
+    "best_for": "Robotics, IP cameras, AI PCs — strong TOPS/watt",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "memryx-mx3",
+    "name": "MemryX MX3 (4-chip M.2)",
+    "vendor": "MemryX",
+    "category": "module",
+    "ai_perf": {
+      "value": 24,
+      "unit": "TOPS",
+      "precision": "4/8/16-bit+BF16"
+    },
+    "power_w": {
+      "min": 6,
+      "max": 8
+    },
+    "memory": "on-chip (~42M params, no external DRAM)",
+    "genai_capable": false,
+    "price_usd": 149,
+    "best_for": "Easy-to-adopt CV dataflow accelerator with an open SDK",
+    "claim_type": "independent",
+    "status": "available"
+  },
+  {
+    "id": "mythic-m1076",
+    "name": "Mythic M1076 AMP (analog)",
+    "vendor": "Mythic",
+    "category": "module",
+    "ai_perf": {
+      "value": 25,
+      "unit": "TOPS",
+      "precision": "analog"
+    },
+    "power_w": {
+      "min": 3,
+      "max": 3
+    },
+    "memory": "up to 80M weights on-chip",
+    "genai_capable": false,
+    "price_usd": null,
+    "best_for": "Analog efficiency for edge vision/defense; all weights on-chip",
+    "claim_type": "vendor",
+    "status": "available"
+  },
+  {
+    "id": "encharge-en100-m2",
+    "name": "EnCharge EN100 (M.2)",
+    "vendor": "EnCharge",
+    "category": "module",
+    "ai_perf": {
+      "value": 200,
+      "unit": "TOPS",
+      "precision": "analog-charge"
+    },
+    "power_w": {
+      "min": 8,
+      "max": 9
+    },
+    "memory": "32 GB LPDDR (272 GB/s)",
+    "genai_capable": true,
+    "price_usd": null,
+    "best_for": "On-device GenAI for AI PCs and laptops",
+    "claim_type": "vendor",
+    "status": "samples"
+  },
+  {
+    "id": "encharge-en100-pcie",
+    "name": "EnCharge EN100 (PCIe, 4 NPUs)",
+    "vendor": "EnCharge",
+    "category": "card",
+    "ai_perf": {
+      "value": 1,
+      "unit": "PetaOPS",
+      "precision": "analog-charge"
+    },
+    "power_w": {
+      "min": 40,
+      "max": 40
+    },
+    "memory": "128 GB LPDDR",
+    "genai_capable": true,
+    "price_usd": null,
+    "best_for": "Workstation on-device GenAI (4 EN100 NPUs)",
+    "claim_type": "vendor",
+    "status": "samples"
+  },
+  {
+    "id": "ambarella-n1-655",
+    "name": "Ambarella N1-655 (CVflow SoC)",
+    "vendor": "Ambarella",
+    "category": "soc",
+    "ai_perf": {
+      "value": 12,
+      "unit": "streams",
+      "precision": "VLM-mixed"
+    },
+    "power_w": {
+      "min": 15,
+      "max": 20
+    },
+    "memory": "system",
+    "genai_capable": true,
+    "price_usd": null,
+    "best_for": "Video + AI in one low-power SoC (security cameras, AMRs)",
+    "claim_type": "vendor",
+    "status": "available"
+  }
+]

@@ -1,0 +1,82 @@
+name: data
+
+# Regenerates the hardware table + picker JSON from data/hardware.yaml, and
+# maintains ONE rolling "stale data" issue. Everything here can also be run by
+# hand:  pip install -r scripts/requirements.txt
+#        python scripts/generate_tables.py          # regenerate
+#        python scripts/generate_tables.py --check   # verify up to date
+#        python scripts/staleness.py --days 180      # build the roll-up
+
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/data.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+  schedule:
+    - cron: '0 6 * * 1'   # Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  regen-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r scripts/requirements.txt
+
+      # On PRs we only verify (no push); on push/schedule we regenerate + commit.
+      - name: Verify generated outputs are current (PRs)
+        if: github.event_name == 'pull_request'
+        run: python scripts/generate_tables.py --check
+
+      - name: Regenerate tables + picker JSON
+        if: github.event_name != 'pull_request'
+        run: python scripts/generate_tables.py
+
+      - name: Commit regenerated outputs if they changed
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "physical-ai-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hardware-comparison/README.md docs/picker/hardware.json
+          if git diff --cached --quiet; then
+            echo "No table changes to commit."
+          else
+            git commit -m "chore(data): regenerate hardware table + picker JSON"
+            git push
+          fi
+
+  staleness:
+    # Weekly (or manual) roll-up of entries not verified in >180 days.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Build the staleness roll-up
+        # Deterministic reference date so reruns are reproducible.
+        run: python scripts/staleness.py --today "$(date -u +%Y-%m-%d)" --days 180
+
+      - name: Open or refresh the single roll-up issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🕒 Stale data check"
+          content-filepath: ./stale.md
+          labels: staleness, automated

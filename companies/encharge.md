@@ -20,7 +20,7 @@ EnCharge's IMC uses **metal-wire switched-capacitor (charge-based)** compute rat
 ## Flagship products (verified)
 | Product | AI perf | Power | Memory | Notes |
 |---|---|---|---|---|
-| **EN100 (M.2)** | 200+ TOPS | 8.25 W | up to 128 GB LPDDR (272 GB/s) | for laptops |
+| **EN100 (M.2)** | 200+ TOPS | 8.25 W | 32 GB LPDDR (272 GB/s) | for laptops |
 | **EN100 (PCIe)** | ~1 PetaOPS | higher | — | 4 NPUs; workstation |
 
 ~30 TOPS/mm² density (vendor figure).

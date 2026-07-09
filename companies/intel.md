@@ -27,7 +27,7 @@ OpenVINO abstracts a **heterogeneous** target: the same model can run on CPU (vi
 ## Software stack (the "CUDA equivalent" for Intel)
 **OpenVINO** (latest **2025.4**, 2026.0 in transition). **OpenVINO GenAI** is the LLM/VLM path; **NNCF** handles INT8/INT4 compression; **OVC** converts models. Repo: [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) · notebooks: [openvino_notebooks](https://github.com/openvinotoolkit/openvino_notebooks).
 
-> ⚠️ **Deprecations (flag these):** the legacy **Model Optimizer**, the **`openvino-dev`** package, and the **Open Model Zoo** are removed; NNCF `create_compressed_model()` is deprecated → use `nncf.quantize()`. See [../renames-and-deprecations.md](../renames-and-deprecations.md).
+> ⚠️ **Deprecations (flag these):** the legacy **Model Optimizer**, the **`openvino-dev`** package, and the **Open Model Zoo** are removed; NNCF `create_compressed_model()` is deprecated → use `nncf.quantize()`. See the canonical [renames-and-deprecations.md](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
 
 ## Latest news (2025–2026)
 - **2025:** OpenVINO 2025.x added a GGUF reader (run llama.cpp models), Mixture-of-Experts support (Qwen3-30B, GPT-OSS-20B), NPU `torch.compile`, and Windows ML gold support.
