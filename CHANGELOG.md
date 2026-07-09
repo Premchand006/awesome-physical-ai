@@ -16,4 +16,4 @@ All notable changes to this repository are documented here (dates `YYYY-MM-DD`).
 - Curated awesome list, renames-and-deprecations page, CI (awesome-lint + lychee), and contribution scaffolding.
 
 [Unreleased]: https://github.com/Premchand006/awesome-physical-ai/commits/main
-[0.1.0]: https://github.com/Premchand006/awesome-physical-ai/commit/89f1d908c76892f6b1d3cf615961e0cd6ea350d2
+[0.1.0]: https://github.com/Premchand006/awesome-physical-ai/releases
