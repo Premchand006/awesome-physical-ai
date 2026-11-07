@@ -2,6 +2,7 @@
 # The site is then served at https://premchand006.github.io/awesome-physical-ai/ and gets
 # its own indexable titles, meta descriptions, canonical URLs, and sitemap.xml.
 title: Physical AI Field Guide
+tagline: Edge-AI Chips, VLA & World Models
 description: >-
   Vendor-neutral field guide to Physical AI: edge-AI chips and NPUs (NVIDIA Jetson, Hailo,
   Qualcomm, Intel, Axelera, SiMa.ai), precision-labeled hardware comparisons, VLA and
