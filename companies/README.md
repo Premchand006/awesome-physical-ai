@@ -11,7 +11,7 @@ The field splits cleanly into two groups with different goals, power envelopes, 
 ```mermaid
 flowchart TB
     subgraph EDGE["On-Device Edge AI Specialists (Watts)"]
-        H[Hailo] & S[SiMa.ai] & AX[Axelera] & Q[Qualcomm] & BL[Blaize] & DX[DeepX] & MX[MemryX] & MY[Mythic] & EN[EnCharge] & AM[Ambarella]
+        H[Hailo] & S[SiMa.ai] & AX[Axelera] & Q[Qualcomm] & IN[Intel] & BL[Blaize] & DX[DeepX] & MX[MemryX] & MY[Mythic] & EN[EnCharge] & AM[Ambarella]
     end
     subgraph DC["Ultra-Scale Datacenter Giants (Kilowatts)"]
         NV[NVIDIA] & GR[Groq] & TT[Tenstorrent]
@@ -23,7 +23,7 @@ flowchart TB
 The fundamental division is **how each chip handles the math** (full taxonomy in [../architecture-philosophies/README.md](../architecture-philosophies/README.md)):
 
 - **Von Neumann / SIMT GPU** — NVIDIA. Massively parallel threads, data shuttled through caches to cores.
-- **Heterogeneous NPU SoC** — Qualcomm, SiMa.ai, Ambarella. Fixed-function matrix engines beside CPUs/ISPs.
+- **Heterogeneous NPU SoC** — Qualcomm, SiMa.ai, Ambarella, Intel. Fixed-function matrix engines beside CPUs/ISPs.
 - **Structural dataflow** — Hailo, MemryX, Blaize. Network layers mapped to physical nodes; activations stream on-chip.
 - **Digital in-memory computing (D-IMC)** — Axelera. Matrix math inside SRAM cells (digital).
 - **Analog in-memory computing** — EnCharge (charge-domain), Mythic (flash). Math in the analog domain; all weights on-chip.
@@ -55,7 +55,7 @@ The fundamental division is **how each chip handles the math** (full taxonomy in
 | [Tenstorrent](datacenter-context.md) | TT-Metalium / TT-Buda | RISC-V Tensix grid | Datacenter training/inference | Open-source bare-metal kernels |
 
 ## Profiles
-**Edge specialists:** [Hailo](hailo.md) · [SiMa.ai](sima-ai.md) · [Axelera](axelera.md) · [Qualcomm](qualcomm.md) · [Blaize](blaize.md) · [DeepX](deepx.md) · [MemryX](memryx.md) · [Mythic](mythic.md) · [EnCharge](encharge.md) · [Ambarella](ambarella.md) · [Intel](intel.md)
+**Edge specialists:** [Hailo](hailo.md) · [SiMa.ai](sima-ai.md) · [Axelera](axelera.md) · [Qualcomm](qualcomm.md) · [Intel](intel.md) · [Blaize](blaize.md) · [DeepX](deepx.md) · [MemryX](memryx.md) · [Mythic](mythic.md) · [EnCharge](encharge.md) · [Ambarella](ambarella.md) · [Intel](intel.md)
 
 **Datacenter / context:** [NVIDIA](nvidia.md) · [Groq & Tenstorrent](datacenter-context.md)
 

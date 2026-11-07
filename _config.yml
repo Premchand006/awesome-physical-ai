@@ -1,0 +1,41 @@
+# GitHub Pages config. Enable Pages under Settings → Pages → "Deploy from a branch" → main / (root).
+# The site is then served at https://premchand006.github.io/awesome-physical-ai/ and gets
+# its own indexable titles, meta descriptions, canonical URLs, and sitemap.xml.
+title: Physical AI Field Guide
+description: >-
+  Vendor-neutral field guide to Physical AI: edge-AI chips and NPUs (NVIDIA Jetson, Hailo,
+  Qualcomm, Intel, Axelera, SiMa.ai), precision-labeled hardware comparisons, VLA and
+  world models, and robotics applications.
+url: https://premchand006.github.io
+baseurl: /awesome-physical-ai
+lang: en
+logo: /physical_ai.jpg
+image: /physical_ai.jpg
+author: Premchand006
+github:
+  repository_nwo: Premchand006/awesome-physical-ai
+
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+
+relative_links:
+  enabled: true
+  collections: false
+titles_from_headings:
+  enabled: true
+  strip_title: false
+
+exclude:
+  - .github/
+  - .lycheeignore
+  - .markdownlint.jsonc
+  - CODE_OF_CONDUCT.md
+  - scripts/
+  - data/

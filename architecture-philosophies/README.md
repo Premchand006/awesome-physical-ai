@@ -6,7 +6,7 @@ Every AI chip is an answer to one question: **how do you move the math and the d
 **Who:** NVIDIA (Jetson). **How:** thousands of threads (Single-Instruction, Multiple-Thread) execute in lockstep, with data passing through multi-level caches to Tensor Cores. **Strength:** total generality — any model, any precision, the richest toolchain (CUDA). **Cost:** the constant data movement through the cache hierarchy is power-hungry relative to fixed-function designs.
 
 ## 2. Heterogeneous NPU SoC
-**Who:** Qualcomm (Hexagon), SiMa.ai (MLSoC), Ambarella (CVflow). **How:** a fixed-function matrix/tensor engine sits beside CPU cores and (often) an image-signal processor on one die, so vision + control + AI run together. **Strength:** whole-application efficiency; great for real systems that aren't pure deep learning. **Cost:** less flexible than a GPU for arbitrary research models.
+**Who:** Qualcomm (Hexagon), SiMa.ai (MLSoC), Ambarella (CVflow), Intel (Core Ultra NPU via [OpenVINO](../companies/intel.md)). **How:** a fixed-function matrix/tensor engine sits beside CPU cores and (often) an image-signal processor on one die, so vision + control + AI run together. **Strength:** whole-application efficiency; great for real systems that aren't pure deep learning. **Cost:** less flexible than a GPU for arbitrary research models.
 
 ## 3. Structural dataflow
 **Who:** Hailo, MemryX, Blaize (GSP). **How:** the network's layers are **mapped directly onto physical compute/memory nodes**; activations stream layer-to-layer on-chip like an assembly line, so weights and intermediates rarely touch external DRAM. **Strength:** excellent performance-per-watt for CV. **Cost:** custom models must be compiled/quantized to fit the fabric.

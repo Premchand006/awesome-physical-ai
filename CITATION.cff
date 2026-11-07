@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you reference this hub, please cite it as below."
+type: dataset
+title: "Physical AI Field Guide: a vendor-neutral guide to Physical-AI hardware, VLA models, and world models"
+authors:
+  - alias: Premchand006
+repository-code: "https://github.com/Premchand006/awesome-physical-ai"
+url: "https://github.com/Premchand006/awesome-physical-ai"
+abstract: >-
+  A curated, vendor-neutral reference to the Physical-AI landscape: deep
+  profiles of edge-AI and datacenter chip companies (NVIDIA, Intel, Qualcomm,
+  Hailo, SiMa.ai, Axelera, Blaize, DeepX, MemryX, Mythic, EnCharge, Ambarella,
+  Groq, Tenstorrent), an architecture-philosophy taxonomy, precision-labeled
+  hardware comparison tables, coverage of vision-language-action (VLA) and
+  world foundation models, applications by vertical, and sourced market data.
+keywords:
+  - physical AI
+  - embodied AI
+  - edge AI
+  - AI accelerators
+  - NPU
+  - robotics
+  - vision-language-action models
+  - world models
+license: CC-BY-4.0
+version: 0.1.0
+date-released: "2026-06-03"

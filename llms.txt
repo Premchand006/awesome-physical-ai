@@ -1,0 +1,38 @@
+# Physical AI Field Guide
+
+> A vendor-neutral field guide to Physical AI: the companies, chips, and models building machines that perceive, reason, and act in the physical world. Every TOPS figure is a peak vendor claim at a stated precision (INT4, INT8, and FP4 are not comparable); independent benchmarks are flagged. Content last reviewed 2026-06-03. Licensed CC BY 4.0.
+
+## Core pages
+
+- [Overview](https://github.com/Premchand006/awesome-physical-ai/blob/main/README.md): what Physical AI is, the two market vectors (edge specialists vs datacenter giants), and summary tables
+- [Concepts](https://github.com/Premchand006/awesome-physical-ai/blob/main/concepts/README.md): definition of Physical AI, cloud vs edge vs embedded, the three-computer workflow
+- [Architecture philosophies](https://github.com/Premchand006/awesome-physical-ai/blob/main/architecture-philosophies/README.md): SIMT GPU, heterogeneous NPU SoC, structural dataflow, digital and analog in-memory compute, deterministic LPU, RISC-V tensor grid
+- [Hardware comparison](https://github.com/Premchand006/awesome-physical-ai/blob/main/hardware-comparison/README.md): precision-labeled flagship specs, vendor vs independent benchmarks
+- [VLA and world models](https://github.com/Premchand006/awesome-physical-ai/blob/main/vla-and-world-models/README.md): RT-2, OpenVLA, pi0, SmolVLA, GR00T N1.5, NVIDIA Cosmos, LeRobot
+- [Applications](https://github.com/Premchand006/awesome-physical-ai/blob/main/applications/README.md): humanoids, AMRs, manufacturing, automotive, smart cities, healthcare
+- [Future and market](https://github.com/Premchand006/awesome-physical-ai/blob/main/future-and-market/README.md): growth thesis and sourced market-size ranges
+- [Renames and deprecations](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md): Groq to NVIDIA, Coral abandoned, TensorFlow Lite to LiteRT, and other 2024-2026 changes
+
+- [Hardware and runtime picker](https://premchand006.github.io/awesome-physical-ai/docs/picker/): interactive tool to choose an edge-AI accelerator or runtime by budget, use case, power, and ecosystem
+
+## Company profiles
+
+- [Company index](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/README.md): master landscape comparison table
+- [NVIDIA](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/nvidia.md): CUDA + Jetson (SIMT GPU)
+- [Intel](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/intel.md): OpenVINO (CPU / NPU / GPU)
+- [Qualcomm](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/qualcomm.md): AI Hub (Hexagon NPU)
+- [Hailo](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/hailo.md): structural dataflow NPU
+- [SiMa.ai](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/sima-ai.md): Palette (MLSoC)
+- [Axelera](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/axelera.md): Voyager SDK (digital in-memory compute)
+- [Blaize](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/blaize.md): Graph Streaming Processor
+- [DeepX](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/deepx.md): DXNN (heterogeneous NPU)
+- [MemryX](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/memryx.md): at-memory dataflow, open SDK
+- [Mythic](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/mythic.md): analog compute-in-memory
+- [EnCharge](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/encharge.md): analog charge-domain in-memory compute
+- [Ambarella](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/ambarella.md): CVflow vision SoC
+- [Groq and Tenstorrent](https://github.com/Premchand006/awesome-physical-ai/blob/main/companies/datacenter-context.md): datacenter context
+
+## Optional
+
+- [Awesome resources](https://github.com/Premchand006/awesome-physical-ai/blob/main/awesome-resources/README.md): curated SDKs, libraries, papers, and benchmarks
+- [Contributing](https://github.com/Premchand006/awesome-physical-ai/blob/main/CONTRIBUTING.md): sourcing and labeling standards

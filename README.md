@@ -3,7 +3,7 @@
 
 # Physical AI Field Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="physical_ai.jpg" alt="Physical AI Field Guide" width="1100" height="500">
+<img src="physical_ai.jpg" alt="Physical AI: sensor data flowing into an AI brain that drives quadruped robots, drones, a robotic arm, and an autonomous car" width="1024" height="562">
 
 
 ### The companies, chips, and models building machines that perceive, reason, and act in the physical world.
@@ -23,7 +23,7 @@
 ---
 
 > [!NOTE]
-> **Specs and corporate status in this field change monthly.** Every TOPS figure here is a **peak vendor claim at a stated precision** (INT4/INT8/FP4 are *not* comparable); only a handful of parts have independent third-party benchmarks, flagged inline. Recent shifts tracked here: **Groq → NVIDIA** (licensed/acqui-hired), **Blaize** went public, **Mythic** revived with $125M, **Ambarella** exploring a sale. See the canonical [**Renames & Deprecations →**](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
+> **Content last reviewed: 2026-06-03** (see [CHANGELOG](CHANGELOG.md)). **Specs and corporate status in this field change monthly.** Every TOPS figure here is a **peak vendor claim at a stated precision** (INT4/INT8/FP4 are *not* comparable); only a handful of parts have independent third-party benchmarks, flagged inline. Recent shifts tracked here: **Groq → NVIDIA** (licensed/acqui-hired), **Blaize** went public, **Mythic** revived with $125M, **Ambarella** exploring a sale. See the canonical [**Renames & Deprecations →**](https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/renames-and-deprecations.md).
 
 ## 📖 Table of Contents
 
@@ -42,6 +42,7 @@
 - [📞 Support and Community](#-support-and-community)
 - [🙏 Acknowledgements](#-acknowledgements)
 - [⭐ Support This Project](#-support-this-project)
+- [📝 How to Cite](#-how-to-cite)
 - [📄 License](#-license)
 
 > Welcome 👋 — if you're trying to make sense of who builds Physical-AI silicon, how their chips actually differ, and which models run on them, start with the [two market vectors](#-the-two-market-vectors) and the [company landscape](#-company-landscape).
@@ -137,7 +138,7 @@ The real differentiator is **how each chip beats the "memory wall."** Full expla
 | Philosophy | Who | One-line idea |
 |---|---|---|
 | **Von Neumann / SIMT GPU** | NVIDIA | massively parallel threads + caches; total generality |
-| **Heterogeneous NPU SoC** | Qualcomm, SiMa.ai, Ambarella | matrix engine beside CPU/ISP on one die |
+| **Heterogeneous NPU SoC** | Qualcomm, SiMa.ai, Ambarella, Intel | matrix engine beside CPU/ISP on one die |
 | **Structural dataflow** | Hailo, MemryX, Blaize | map layers to physical nodes; stream on-chip |
 | **Digital in-memory (D-IMC)** | Axelera | multiply-accumulate inside SRAM (digital) |
 | **Analog in-memory** | EnCharge, Mythic | math in the analog domain; weights on-chip |
@@ -282,7 +283,7 @@ Look for [`good first issue`](https://github.com/Premchand006/awesome-physical-a
 ## 📞 Support and Community
 
 - 🐛 **Issues** — correct a spec, flag a status change, or report a dead link (templates provided).
-- 💡 **Discussions / PRs** — propose a company, product, or resource; see [CONTRIBUTING.md](CONTRIBUTING.md).
+- 💡 **Pull requests** — propose a company, product, or resource; see [CONTRIBUTING.md](CONTRIBUTING.md).
 - 🔁 **Spot something outdated?** — in a field this fast, fixing a stale number is the most valuable thing you can do.
 
 ---
@@ -296,6 +297,12 @@ Built in the spirit of the [Awesome](https://awesome.re) movement and the wider 
 - ⭐ **Star** the repo so more builders and analysts find it.
 - 🔗 **Share** it with someone comparing edge-AI silicon.
 - 🤝 **Contribute** a corrected spec, a dated news item, or a new profile.
+
+## 📝 How to Cite
+
+If you reference this guide in a paper, report, or article, use GitHub's **"Cite this repository"** button (from [CITATION.cff](CITATION.cff)), or:
+
+> Premchand006. *Physical AI Field Guide: a vendor-neutral guide to Physical-AI hardware, VLA models, and world models.* GitHub, 2026. <https://github.com/Premchand006/awesome-physical-ai>
 
 ## 📄 License
 

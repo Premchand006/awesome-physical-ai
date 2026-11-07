@@ -3,6 +3,12 @@
 All notable changes to this repository are documented here (dates `YYYY-MM-DD`). Follows [Keep a Changelog](https://keepachangelog.com/) loosely.
 
 ## [Unreleased]
+### Changed
+- Linked the Intel (OpenVINO) profile from the company index and the architecture taxonomy.
+- Gave the README banner descriptive alt text and its true aspect ratio; added a "last reviewed" date and a "How to Cite" section.
+- Added `CITATION.cff`, `llms.txt`, and a GitHub Pages `_config.yml` (SEO tags + sitemap).
+
+### Planned
 - Add independent third-party benchmarks for Axelera, SiMa, DeepX, and EnCharge as they are published.
 - Expand applications with more named deployments per vertical.
 
